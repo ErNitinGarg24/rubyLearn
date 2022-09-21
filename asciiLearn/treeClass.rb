@@ -11,8 +11,7 @@ class Trees
         tree_slashes = 1
         # Creating space contained for the tree
         width = (@length * 2) + @space
-        puts "The length of tree is #{@length}, and the space is #{@space}, and the hence the width is #{width}"  
-        # width = 200
+        # puts "The length of tree is #{@length}, and the space is #{@space}, and the hence the width is #{width}" 
         @length.times do |i|
             puts (("/"*tree_slashes)+("\\" *tree_slashes)).center(width)
             if i > 0

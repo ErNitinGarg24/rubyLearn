@@ -6,7 +6,6 @@ width = level * 15
 def creatingLine(char, level)
     return ("_" * 4*level)+"#{char}"
 end
-
 # Creating Ceiling of the Hut
 level.times do |i|
     if i == 0
@@ -19,7 +18,6 @@ level.times do |i|
         puts ("/"+(" " * 2*(i-1))+"\\"+creatingLine("\\", level)).center(width)
     end
 end
-
 # Creating Base of the Hut
 level.times do |i|
     puts ("_|"+("_" * ((level-3)*2)) +"|"++creatingLine("|_", level)).center(width) unless i != (level -1)
