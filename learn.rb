@@ -1,1 +1,1 @@
-./learn.rb
+/.learn.rb
