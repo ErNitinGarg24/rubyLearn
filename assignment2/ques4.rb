@@ -15,7 +15,7 @@ b) Write the replaced output to a new file
 # puts fileData
 
 # puts fileData.readlines.map(&:chomp)
-
+# try solve this problem usin regex**
 # Before running this code please clear everything inside write.txt file.
 writeFile = File.open("assignment2/write.txt", 'w')
 readFile = File.open("assignment2/test.txt")
