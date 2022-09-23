@@ -6,27 +6,58 @@ Please define the variable names, classes, methods and all coding in ruby way of
 ============================================================
 =end
 
+
+# =========================================================================================================
+# Important Note: Please define the variable names, classes, methods and all coding in ruby way of coding.
+# =========================================================================================================
+
+# 1. Write a program which creates a class “Student”
 class Student
-    def setStudDetails(rollNum, studName, mark1, mark2, mark3)
-        @rollNum = rollNum
-        @studName = studName 
-        @mark1 = mark1
-        @mark2 = mark2
-        @mark3 = mark3
+    # 1.1. class shouldhave data members 
+    #  1.1.1) rollNum, 
+    @@rollNum
+    #  1.1.2) studName, 
+    @@studName 
+    #  1.1.3) mark1, 
+    @@mark1
+    #  1.1.4) mark2, 
+    @@mark2
+    #  1.1.5) mark3, 
+    @@mark3
+    #  1.1.6) totalMarks 
+    @@totalMarks
+    #  1.1.7) Methods 
+    #   1.1.7.1) setStudDetails() 
+    def self.setStudDetails
+        #    1.1.7.1.1) sets the values to all the data members except totalMarks
+        puts "What's your roll No.: "
+        @@rollNum = gets.chomp.to_i
+        puts "What's yout name: "
+        @@studName = gets.chomp        
+        puts "What's your mark1.: "
+        @@mark1 = gets.chomp.to_i        
+        puts "What's your mark2.: "
+        @@mark2 = gets.chomp.to_i
+        puts "What's your mark3.: "
+        @@mark3 = gets.chomp.to_i
     end
-    def calculateTotal
-        @totalMarks = @mark1 + @mark2 + @mark3
+    #   1.1.7.2) calculateTotal()
+    def self.calculateTotal
+        #    1.1.7.2.1) calculate the totalMarks
+        setStudDetails
+        @@totalMarks = @@mark1 + @@mark2 + @@mark3
     end
-    def displayStudDetails
+    #   1.1.7.3) displayStudDetails()
+    def self.displayStudDetails
+    #    1.1.7.3.1) which displays rollNum, studName and totalMarks
         calculateTotal
-        puts @rollNum, @studName , @totalMarks
+        puts "Hi the rollNumber of the student is #{@@rollNum}, Name of the student #{@@studName} ,The total marks are #{@@totalMarks}"
     end
 end
 
-stu1 = Student.new()
-stu1.setStudDetails(1, "Nitin", 10, 11, 12)
-stu1.displayStudDetails
 
-stu2 = Student.new()
-stu2.setStudDetails(2, "Nitin1", 11, 12, 13)
-stu2.displayStudDetails
+# 2. Create a class StudentDemo
+class StudentDemo
+#   2.1) to test the functionality of Student class
+    Student.displayStudDetails
+end
