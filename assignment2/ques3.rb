@@ -71,7 +71,17 @@ commutativeLaw(A, U)
 
 # Associative Law :
 def associativeLaw(a, b, c)
-    
+# Associative Law states that the grouping of set operation does not change the result of next grouping of sets. It is one of the important concepts of set theory. If we have three sets A, B and C, then,
+
+#    1. Associative Law of Intersection: (A ∩ B) ∩ C = A ∩ (B ∩ C)
+puts "(A ∩ B) ∩ C = A ∩ (B ∩ C) : #{(((a|b)|c = a|(b|c)) && ((a&b)&c = a&(b&c)))? "Associative law proved" : "false"}"
+#    2. Associative Law of Union: (A U B) U C = A U (B U C)
 end
+associativeLaw(A, B, U)
+associativeLaw(B, A, U)
+associativeLaw(A, U, B)
+associativeLaw(B, U, A)
+associativeLaw(U, B, A)
+associativeLaw(U, A, B)
 
 # De Morgan's Law :
