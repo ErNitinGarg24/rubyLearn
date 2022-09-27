@@ -85,3 +85,16 @@ associativeLaw(U, B, A)
 associativeLaw(U, A, B)
 
 # De Morgan's Law :
+
+def deMorganLaw(a,b,c)
+    # De Morgan's Law states
+    # 1) The complement of the union of two sets is the intersection of their complements
+    # (A∪B)′ =A′∩B′
+    
+    # 2) The complement of the intersection of two sets is the union of their complements
+    # (A∩B)′ =A′∪B′
+
+    # puts "(A∪B)′ =A′∩B′ and(A∩B)′ =A′∪B′  : #{((c-(a&b)= ((c-a)|(c-b))) && (c-(a|b) = ((c-a)&(c-b))))? "De Morgan's law proved" : "false"}"
+    puts "(A∪B)′ =A′∩B′ and(A∩B)′ =A′∪B′  : #{((c-(a|b)) == ((c-a)&(c-b)) && (c-(a|b)) == ((c-a)&(c-b))) ? "De Morgan's law proved" : "false" } "
+end
+deMorganLaw(A, B, U)
