@@ -26,3 +26,23 @@ Default type should be PST
 
 ============================================================
 =end
+
+# Write a Class for date operations
+# require "date"
+require "time"
+class DateOperations
+    # the input can be date of format Date Type or else string, also conversion type.
+    puts "Enter the date : "
+    date = Date.parse(gets.chomp)
+    puts "Enter the type : "
+    type = gets.chomp
+    if (type=="IST")
+        puts "IST Date : #{date.strftime("%d/%m/%Y")}"
+    elsif (type=="ORT")
+        puts "ORT Date :  #{date.strftime("%m/%d/%Y %H:%M:%S %z")}"
+    else  
+        puts "PST Date :  #{date.strftime("%m/%d/%Y")}"
+    end 
+end
+date1 = DateOperations.new
+date1
