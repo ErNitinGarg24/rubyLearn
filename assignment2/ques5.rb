@@ -1,41 +1,6 @@
 =begin
 ============================================================
-Q: [Yesterday 13:35] Devapitchai, Martin
-Important!
-Next set of assignment's, EOD - 3PM - Friday
-
-1. Write a program which creates a class “Student” with the following Data Members rollNum, studName, mark1, mark2, mark3, totalMarks Methods setStudDetails() – which sets the values to all the data members except totalMarks. calculateTotal() - which calculate the totalMarks displayStudDetails() – which displays rollNum, studName and totalMarks Create a class StudentDemo to test the functionality of Student class.
-
-Please define the variable names, classes, methods and all coding in ruby way of coding.
-
-2. Write a program to measure the electricity consumption charges
-
-a) For the first 100 units - 6rupees per unit
-b) For the next 200 units - 11rupees per unit
-c) Beyond 300 units - 15rupees per unit
-
-All users are charged a minimum of Rs.50.00. if the total amount is more than Rs.300.00 than additional surcharge of 15% should be added, by default 5% applicable.
-
-The program should ask for number of user details based on number it should ask name and no of units, calculate the charges respectively and store in a array of hash and display the details.
-3. Write a program to define all set operations, union, intersection, compliment and cartesian product.
-
-Set Operations:
-
-Set A : [1,2,3,4]
-Set B: [1,2,3,4}
-A U B :
-A N B :
-A Compliment :
-cartesian Product:
-Commutative Law  :
-Associative Law :
-De Morgan's Law :
-
-4. Write a program to read a file and do below operations
-
-a) replaces all numbers to words (eg 1 to one)
-b) Write the replaced output to a new file
-5. Write a Class for date operations, the input can be date of format Date Type or else string, also conversion type.
+Q: 5. Write a Class for date operations, the input can be date of format Date Type or else string, also conversion type.
 Example : 
 Input : it should accept string type, date type, date time etc
 Various output formats: "%B %-d, %Y" # "October 2, 2012"
