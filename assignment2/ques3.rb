@@ -41,6 +41,8 @@ U = A|B
 
 puts "A U B : #{A|B}"
 puts "A N B : #{A&B}"
+
+# Creating Universal set to calculate Compliment
 puts U
 
 
