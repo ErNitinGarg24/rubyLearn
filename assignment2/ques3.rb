@@ -100,3 +100,4 @@ def deMorganLaw(a,b,c)
     puts "(A∪B)′ =A′∩B′ and(A∩B)′ =A′∪B′  : #{((c-(a|b)) == ((c-a)&(c-b)) && (c-(a|b)) == ((c-a)&(c-b))) ? "De Morgan's law proved" : "false" } "
 end
 deMorganLaw(A, B, U)
+deMorganLaw(B, A, U)
