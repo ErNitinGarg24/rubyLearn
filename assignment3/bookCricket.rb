@@ -12,6 +12,7 @@ Playing 11
 
 Choose captain
 
+
 You can choose who can come next for batting
 
 Have 1,2,3,4,6, Wicket(caught behind, stumping, lbw, runout, catch out, bold), Wide, byes, leg byes etc as random generator
