@@ -11,7 +11,7 @@ rows = gets.chomp.to_i
 character_rep = 1
 width = (character.length * ((rows * 2)-1)) + 20
 
-puts character, character.length , character_rep, width, rows
+# puts character, character.length , character_rep, width, rows
 
 rows.times do 
     puts (character * character_rep).center(width)
